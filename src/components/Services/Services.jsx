@@ -4,9 +4,9 @@ import NavigationBar from '../NavigationBar/NavigationBar'
 
 function Services() {
   return (
-    <div className="Services">
+    <div className="services">
       <NavigationBar />
-      <header className="Services-header">
+      <header className="services-header">
         <p>Services - Coming soon!</p>
       </header>
     </div>
