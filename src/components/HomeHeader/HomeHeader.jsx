@@ -3,7 +3,7 @@ import './HomeHeader.scss'
 
 const HomeHeader = () => (
   <header className="home-header">
-    <h1>Lutz and Associates Consulting</h1>
+    <h1>Lutz and Associates</h1>
     <p>
       Safety, Solutions, Experience<br />
       We serve our client's needs FIRST<br />
