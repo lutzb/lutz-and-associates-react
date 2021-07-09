@@ -1,0 +1,17 @@
+.footer {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vmin;
+  color: white;
+  background-color: #ffa2a2;
+
+  .social-logo {
+    display: inline-block;
+    height: 40px;
+    width: 45px;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,49 @@
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20;
+  align-items: center;
+  background-color: #ffa2a2;
+
+  .logo {
+    width: 30%;
+    height: auto;
+    align-items: center;
+  }
+
+  .navigation-items {
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    align-items: center;
+
+    .navigation-item {
+      text-decoration: none;
+      color: white;
+      padding-bottom: .3rem;
+
+      &:hover {
+        border-bottom: 3px solid #8AE9FD;
+        
+      }
+    }
+  }
+
+  .desktop {
+    @media (max-width: 900px) {
+        display: none;
+      }
+  }
+
+  .mobile {
+    z-index: 9999;
+
+    @media (min-width: 900px) {
+        display: none;
+    }
+  }
+}
