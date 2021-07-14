@@ -19,8 +19,8 @@ function NavigationBar() {
             {
                 NavigationLinks.map((page, index) => (
                   <div className='a-row' key={index} >
-                    <NavLink exact to={page.route} className="nav-links" onClick={handleClick}>
-                        <div className='nav-item' activeClassName="active-page">
+                    <NavLink exact to={page.route} className="nav-links" activeClassName="active-page" onClick={handleClick}>
+                        <div className='nav-item'>
                           {page.name}
                         </div>
                     </NavLink>
