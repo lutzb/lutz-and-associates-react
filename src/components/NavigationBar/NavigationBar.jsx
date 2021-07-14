@@ -9,29 +9,29 @@ function NavigationBar() {
 
     const handleClick = () => setClick(!click);
     return (
-      <>
-        <nav className="nav-bar">
-          <div className="nav-container">
-
-            <NavLink exact to="/" className="nav-logo">
-                <img  className='nav-logo-img' src={Logo} alt=''/>
-            </NavLink>
-
-            <ul className={click ? "nav-menu active" : "nav-menu"}>
-                {
-                    NavigationLinks.map((page, index) => (
-                        <NavLink exact to={page.route} activeClassName="active" className="nav-links" key={index} onClick={handleClick}>
-                            {page.name}
-                        </NavLink>
-                    ))
-                }
-            </ul>
-            <div className="nav-icon" onClick={handleClick}>
-              <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
-            </div>
-          </div>
-        </nav>
-      </>
+      <div className="nav-container">
+        <div className="nav-logo">
+          <NavLink exact to="/">
+              <img  className='nav-logo-img' src={Logo} alt=''/>
+          </NavLink>
+        </div>
+        <ul className={click ? "nav-menu menu-show" : "nav-menu"}>
+            {
+                NavigationLinks.map((page, index) => (
+                  <div className='a-row' key={index} >
+                    <NavLink exact to={page.route} className="nav-links" onClick={handleClick}>
+                        <div className='nav-item' activeClassName="active-page">
+                          {page.name}
+                        </div>
+                    </NavLink>
+                  </div>
+                ))
+            }
+        </ul>
+        <div className="nav-icon" onClick={handleClick}>
+          <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
+        </div>
+      </div>
     );
   }
 
