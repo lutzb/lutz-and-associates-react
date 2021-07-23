@@ -11,6 +11,7 @@ import About from './components/About/About'
 import Services from './components/Services/Services'
 import Blog from './components/Blog/Blog'
 import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 
 ReactDOM.render(
     <BrowserRouter>
@@ -20,6 +21,7 @@ ReactDOM.render(
         <Route path="/Services" exact component={Services} />
         <Route path="/Blog" exact component={Blog} />
         <Route path="/Contact" exact component={Contact} />
+        <Footer />
     </BrowserRouter>, document.getElementById('root')
 );
 

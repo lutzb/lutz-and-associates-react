@@ -1,0 +1,27 @@
+.profile-card {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #272A35;
+  background-color: whitesmoke;
+}
+
+.profile-container {
+  padding: 0 16px;
+}
+
+.profile-container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}

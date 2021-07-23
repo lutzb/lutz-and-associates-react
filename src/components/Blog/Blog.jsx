@@ -1,6 +1,5 @@
 import React from 'react';
 import './Blog.scss';
-import Footer from '../Footer/Footer'
 import BlogEntry1 from './BlogEntries/BlogEntry1'
 
 function Blog() {
@@ -9,7 +8,6 @@ function Blog() {
         <div className='blog-entries'>
           <BlogEntry1 />
         </div>
-        <Footer />
     </div>
   );
 }
