@@ -1,7 +1,7 @@
 import React from 'react'
 import './HomeTiles.scss'
 import HomeTile from '../HomeTile/HomeTile'
-import FirePicture from '../../img/fire.gif'
+import FirePicture from '../../../img/fire.gif'
 
 const HomeTiles = () => (
   <div className='home-tiles'>
