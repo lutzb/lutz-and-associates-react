@@ -5,9 +5,12 @@ import BlogEntry1 from './BlogEntries/BlogEntry1'
 function Blog() {
   return (
     <div className='blog'>
-        <div className='blog-entries'>
-          <BlogEntry1 />
-        </div>
+      <header className="blog-header">
+        <h2>Blog</h2>
+      </header>
+      <div className='blog-entries'>
+        <BlogEntry1 />
+      </div>
     </div>
   );
 }

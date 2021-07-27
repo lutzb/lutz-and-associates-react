@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.scss';
+import ServiceButtons from './ServiceButtons/ServiceButtons'
 
 function servicesText1() {
   return `
@@ -24,6 +25,7 @@ function Services() {
         <br />
         <span className='services-text'>{servicesText2()}</span>
       </div>
+      <ServiceButtons />
     </div>
   );
 }

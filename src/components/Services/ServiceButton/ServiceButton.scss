@@ -1,30 +1,21 @@
-.column {
-  float: left;
-  width: 30%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
+.service-button {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  min-height: 70vh;
+  margin: 12px;
+  color: #ffa2a2;
+  background-color: whitesmoke;
+  transition: 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-
-.card-image{
-  width: 90%;
-  margin-top: 15px;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+.service-button:hover {
+  color: whitesmoke;
+  background-color: #ffa2a2;
 }
 
 @media screen and (max-width: 650px) {

@@ -26,6 +26,9 @@ function BryanText() {
 function About() {
   return (
     <div className="about">
+      <header className="about-header">
+        <h2>About Us</h2>
+      </header>
       <div className="profiles">
         <Profile image={OldPeopleBurning} name='Jeff Lutz' role='President & Chief Executive Officer' text={JeffText()}/>
         <Profile image={OldPeopleBurning} name='Steve Lutz' role='Chief Financial Officer' text={SteveText()}/>
