@@ -3,10 +3,6 @@ import './ServiceButtons.scss'
 import ServiceButton from '../ServiceButton/ServiceButton'
 
 function ServiceButtons() {
-  const ServiceLinks = [
-    { name: 'Fire', route: '/Services/Fire'},
-  ]
-
   return (
     <div className='service-buttons'>
       <div className='column'>
