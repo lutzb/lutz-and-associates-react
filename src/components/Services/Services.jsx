@@ -17,11 +17,13 @@ function Services() {
   return (
     <div className="services">
       <header className="services-header">
-        <h2>Lutz and Associates Consulting Services</h2>
+        <h2>Consulting Services</h2>
+      </header>
+      <div className='services-body'>
         <span className='services-text'>{servicesText1()}</span>
         <br />
         <span className='services-text'>{servicesText2()}</span>
-      </header>
+      </div>
     </div>
   );
 }
