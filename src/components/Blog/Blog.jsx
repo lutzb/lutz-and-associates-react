@@ -1,6 +1,6 @@
 import React from 'react';
 import './Blog.scss';
-import BlogEntry1 from './BlogEntries/BlogEntry1'
+import BlogEntry1 from './BlogEntry/BlogEntry1'
 
 function Blog() {
   return (

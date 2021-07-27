@@ -1,11 +1,14 @@
 import React from 'react'
 import './ServiceButton.scss'
+import { Link } from "react-router-dom";
 
 function ServiceButton(props) {
   return (
-    <div className="service-button">
-        <p>{props.text}</p>
-    </div>
+    <Link className='service-link' to={props.route}>
+      <div className='service-button'>
+        {props.text}
+      </div>
+    </Link>
   );
 }
 

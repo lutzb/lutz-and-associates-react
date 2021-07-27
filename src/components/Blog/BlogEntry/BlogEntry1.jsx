@@ -1,10 +1,10 @@
 import React from 'react';
-import './BlogEntries.scss';
+import './BlogEntry.scss';
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-function BlogEntry2() {
+function BlogEntry1() {
   return (
     <div className='blog-entry'>
       <h1>Test Blog Post #1</h1>
@@ -30,4 +30,4 @@ function BlogEntry2() {
   );
 }
 
-export default BlogEntry2;
+export default BlogEntry1;
