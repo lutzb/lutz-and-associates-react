@@ -19,7 +19,7 @@ function ServiceButtons() {
       </div>
       <div className='column'>
         <ServiceButton text='A thing' route='/Services/Fire' />
-        <ServiceButton text='The biggest service known' route='/Services/Fire' />
+        <ServiceButton text='The biggest service known to man' route='/Services/Fire' />
         <ServiceButton text='Service 2 thingy' route='/Services/Fire' />
         <ServiceButton text='Service 2 thingy' route='/Services/Fire' />
       </div>

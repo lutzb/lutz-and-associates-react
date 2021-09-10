@@ -1,5 +1,6 @@
 import React from 'react';
-import './ServicesPage.scss';
+import './ServicePage.scss';
+import ServiceButton from '../ServiceButton/ServiceButton'
 
 function fireText() {
   return `
@@ -9,12 +10,17 @@ function fireText() {
 
 function ServicePageFire() {
   return (
-    <div className="services">
-      <header className="services-header">
-        <h2>F I R E</h2>
+    <div className="service-page">
+      <header className="service-page-header">
+        <h2>Fire Prevention</h2>
       </header>
-      <div className='services-body'>
-        <span className='services-text'>{fireText()}</span>
+      <div className="service-page-back">
+        <div className='column'>
+          <ServiceButton text='Back' route='/Services' />
+        </div>
+      </div>
+      <div className='service-page-body'>
+        <span className='service-page-text'>{fireText()}</span>
       </div>
     </div>
   );
